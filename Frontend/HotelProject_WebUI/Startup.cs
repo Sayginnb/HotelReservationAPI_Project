@@ -46,7 +46,7 @@ namespace HotelProject_WebUI
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=Staff}/{action=Index}/{id?}");
             });
         }
     }
