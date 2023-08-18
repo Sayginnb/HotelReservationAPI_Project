@@ -1,4 +1,5 @@
 ﻿using DataAccessLayer.Abstract;
+using DataAccessLayer.Concrete;
 using DataAccessLayer.Repositories;
 using EntityLayer.Concrete;
 using System;
@@ -7,9 +8,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataAccessLayer.Concrete.EntityFramework
+namespace DataAccessLayer.EntityFramework
 {
-    public class EfStaffDal : GenericRepository<Staff, Context>, IStaffDal
+    public class EfRoomDal : GenericRepository<Room>, IRoomDal
     {
+        public EfRoomDal(Context context) : base(context)
+        {
+
+        }
     }
 }
