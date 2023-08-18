@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.Abstract
 {
-    public interface IServicesDal : IGenericDal<Service>
+    public interface IServiceDal : IGenericDal<Service>
     {
     }
 }
